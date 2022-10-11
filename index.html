@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Incendios Forestales.</title>
+<style>
+body {
+  margin: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:rgb(255, 0, 0);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color:rgba(255, 166, 0, 0.939);
+  color: black;
+  
+}
+
+.topnav a.active {
+  background-color: rgba(255, 166, 0, 0.939);
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+ .imagen {
+  max-width: 300px;
+ }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Secciones</a>
+  <a href="causas.html">Causas</a>
+  <a href="consecuencias.html">Consecuencias</a>
+  <a href="PaisesAfectados.html">Países o regiones más propensos a tener incendios forestales</a>
+  <a href="prevenir Incendios.html">¿Cómo prevenirlos?</a>
+  <a href="Integrantes.html">Datos personales</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+  <h1 style="padding-left:16px; text-align: center;">Incendios Forestales.</h1>
+  
+  <img class="imagen" style="width:410px; margin-left:2px; float: right; margin-bottom: 5px;" src="img/incendios1.jpg" alt="Incendio">
+
+  <h2 style="color:crimson;">¿Qué es un incendio forestal?</h2>
+  <h3>Los incendios forestales son fuegos fuera de control en un área natural, como bosques, pastizales o praderas. A menudo comienzan inavertidos. Se propagan rápidamente y pueden dañar recursos naturales, destruir hogares y amenazar con la seguridad de la población y de los bomberos.</h3>
+  <h2 style="color:crimson;">Diferentes tipos de daños en los ecosistemas:</h2> 
+  <h3>Los superficiales, donde el fuego consume los combustibles que se encuentran sobre el suelo como hierbas, zacates, leñas, hojarasca, sin quemar todo el cuerpo de los árboles.</h3>
+  <h3>Los subterráneos, el fuego quema el mantillo y raíces bajo la superficie del suelo o la materia orgánica acumulada en las fracturas de grandes afloramientos de roca "malpaís".</h4>
+  <h3>Por último, los incedios de copa o corona, poco frecuentes en México, en los cuales el fuego consume completamente a los árboles y se propaga tanto de copa en copa como súperficialmente.</h3>
+  <h2 style="color: crimson;">No quemes los que es vital, todos contra el fuego o esto acabara mal.</h2>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
